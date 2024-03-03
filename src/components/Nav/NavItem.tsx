@@ -5,7 +5,7 @@ interface Props {
 const NavItem = ({ name, idx }: Props) => {
   return (
     <li
-      className={`text-slate-500 text-[4px] ${idx === 3 ? ` font-semibold` : `text-gray-300`}`}
+      className={`text-slate-500 text-[6px] md:text-[10px] ${idx === 3 ? ` font-semibold` : `text-gray-300`}`}
     >
       {idx === 4
         ? `${name} `

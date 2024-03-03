@@ -10,7 +10,7 @@ const breadrumbItems = [
 const Nav = () => {
   return (
     <nav>
-      <ul className=" flex justify-center items-center ml-7">
+      <ul className=" flex justify-center items-center  pl-3 md:pl-14">
         {breadrumbItems.map((item) => (
           <NavItem name={item.name} idx={item.idx} key={item.idx} />
         ))}

@@ -17,7 +17,7 @@ const products = [
   },
   {
     idx: 3,
-    name: "EC-GO Tryout Bag",
+    name: "EC-GO Tryout low Bag",
     desc: "2 WeekSubscription",
     imageSrc: "/assets/product-3.PNG",
     quantity: 2,
@@ -33,22 +33,28 @@ const Cart = () => {
           className="flex justify-between mt-2 text-[4.5px]  items-center border-b pb-2 "
           key={product.idx}
         >
-          <div className="flex gap-x-5">
-            <img src={product.imageSrc} className="w-8 " />
+          <div className="flex gap-x-5 ">
+            <img src={product.imageSrc} className="w-20" />
 
-            <div className="pt-2">
-              <p className="font-semibold">{product.name}</p>
-              <p className="text-[5px] text-gray-600">{product.desc}</p>
+            <div className=" pt-8 md:pt-5">
+              <p className="font-semibold text-[8px] md:text-[12px]">
+                {product.name}
+              </p>
+              <p className=" text-gray-600 text-[5px] md:text-[10px]">
+                {product.desc}
+              </p>
             </div>
           </div>
 
           <p
-            className={`rounded-sm p-1 ${product.quantity === 3 ? `bg-[#52c5b2] p-1.5  text-white` : `border border-slate-300`}`}
+            className={`rounded-sm p-1 text-[8px] md:text-[15px] ${product.quantity === 3 ? `bg-[#52c5b2] p-1.5  text-white` : `border border-slate-300`} p-1.5`}
           >
             {product.quantity}
           </p>
 
-          <p className="font-bold">{product.price} SEK</p>
+          <p className="font-bold text-[8px] md:text-[15px]">
+            {product.price} SEK
+          </p>
         </li>
       ))}
     </ul>

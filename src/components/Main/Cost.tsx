@@ -4,7 +4,7 @@ import CostItem from "./CostItem";
 const Cost = () => {
   return (
     <>
-      <ul className="font-semibold  text-[4.5px] border-b">
+      <ul className="font-semibold  text-[8px] md:text-[15px] border-b ">
         <CostItem name="Subtotal" price={537} key={1} />
         <CostItem name="Shipping" price={0} key={2} />
         <CostItem name="Total" price={537} key={3} />

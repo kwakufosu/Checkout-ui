@@ -5,16 +5,16 @@ import ShippingDetails from "./ShippingDetails";
 
 const Main = () => {
   return (
-    <main className="min-w-[90%] mx-auto grid gap-x-24 grid-cols-2 mt-6">
+    <main className=" max-w-[80%] mx-auto mt-6 md:grid gap-x-24 md:grid-cols-2 ">
       <div>
-        <h2>Checkout</h2>
+        <p className="font-semibold text-[30px]">Checkout</p>
         <ShippingDetails />
         <PaymentDetails />
       </div>
       <div>
-        <p className="uppercase text-[8px] text-gray-600 py-1 mt-9 border-b">
+        <p className="uppercase  text-gray-600 py-1 mt-9 border-b text-[30px] font-light">
           {" "}
-          Your order <span className="text-[5px]">Edit shopping bag</span>
+          Your order <span className="text-[15px]">Edit shopping bag</span>
         </p>
 
         <Cart />
